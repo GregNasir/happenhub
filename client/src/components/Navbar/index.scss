@@ -1,0 +1,19 @@
+.bg-body-tertiary {
+    width: 100%;
+    height: 100px;
+
+    #city-zip {
+        margin-right: 20px;
+        
+    }
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+    #city-zip {
+        
+        // background-color: red;
+        
+    }
+}
