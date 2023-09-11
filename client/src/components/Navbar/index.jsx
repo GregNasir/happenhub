@@ -1,0 +1,88 @@
+import './index.scss'
+import { useState } from 'react'
+// import { Link, NavLink } from 'react-router-dom'
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+const Hubnav = () => {
+    const [showNav, setShowNav] = useState(false);
+    return (
+        <>
+            {/* <div className='nav-bar'>
+                <Link
+                    className='site-name'
+                    to="/"
+                    onClick={() => setShowNav(false)}>
+
+                        <h1>HappenHub</h1>
+
+                </Link>
+
+                <nav className={showNav ? 'mobile-show' : ''}>
+                    
+                </nav> */}
+    <Navbar fixed="top" expand="lg" className="bg-body-tertiary">
+        <Container fluid>
+            <Navbar.Brand href="/">HappenHub</Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Navbar.Collapse id="navbarScroll">
+            <Nav
+                className="me-auto my-2 my-lg-0"
+                style={{ maxHeight: '100px' }}
+                navbarScroll
+            >
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/about">About</Nav.Link>
+                <NavDropdown title="Events" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="/music">music</NavDropdown.Item>
+                <NavDropdown.Item href="/food">food</NavDropdown.Item>
+                <NavDropdown.Item href="/sports">sports</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/art">
+                    Art
+                </NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Link href="/favorites">Favorites</Nav.Link>
+            </Nav>
+            
+            <Form className="d-flex" id="city-zip">
+                <Form.Control
+                type="search"
+                placeholder="City or Zip Code"
+                className="me-2"
+                aria-label="Search"
+                />
+                <Button variant="outline-success">Search</Button>
+            </Form>
+
+            <Form className="d-flex">
+                <Form.Control
+                type="search"
+                placeholder="Search Events"
+                className="me-2"
+                aria-label="Search"
+                />
+                <Button variant="outline-success">Search</Button>
+            </Form>
+            </Navbar.Collapse>
+        </Container>
+    </Navbar>
+
+
+
+
+
+
+            {/* </div> */}
+
+
+
+        </>
+    )
+}
+
+export default Hubnav;
