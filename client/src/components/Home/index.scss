@@ -1,5 +1,15 @@
 .site-title {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 60px;
+    font-size: 50px;
     color: blue;
+}
+
+/*background image*/
+
+.back-img {
+    background-image: url('../../assets/pink-back.jpeg');
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
