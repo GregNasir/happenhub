@@ -20,7 +20,7 @@ const Hubnav = () => {
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
                             className="menu"
-                            style={{ display: "flex", flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center', padding: '100px', maxHeight: '500px' }}
+                            style={{ display: "flex", flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center', padding: '110px', maxHeight: '500px' }}
                             navbarScroll
                         >
                             <Nav.Link className="p-2" href="/">Home</Nav.Link>
