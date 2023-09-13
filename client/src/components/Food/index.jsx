@@ -38,7 +38,7 @@ import './index.scss';
                     <Card.Body>
                         <Card.Title>Brunch/Dinner</Card.Title>
                         <Card.Text>
-                        Indulge in Culinary Delights, Brunch & Dinner Extravaganza. Enjoy a variety of delicious dishes from around the world, including hand-carved meats, rotisserie chicken, seafood, pasta dishes, salads, and more!
+                        Indulge in Culinary Delights, Brunch & Dinner Extravaganza. Enjoy a variety of delicious dishes from around the world, including hand-carved meats, rotisserie chicken, seafood, pasta dishes, salads, and more!!!!
 
 
                         </Card.Text>
