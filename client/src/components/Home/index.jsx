@@ -8,7 +8,8 @@ const Home = () => {
             </div>
             <div className='back-img'>
             </div>
-
+            <div className='blockquote'>
+            </div>
         </>
     )
 }

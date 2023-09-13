@@ -12,7 +12,7 @@ const Hubnav = () => {
     const [showNav, setShowNav] = useState(false);
     return (
         <>
-            
+
             <Navbar fixed="top" expand="lg" className="bg-body-tertiary">
                 <Container fluid>
                     <Navbar.Brand href="/">HappenHub</Navbar.Brand>
@@ -20,7 +20,7 @@ const Hubnav = () => {
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
                             className="menu"
-                            style={{ maxHeight: '500px' }}
+                            style={{ display: "flex", flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center', padding: '100px', maxHeight: '500px' }}
                             navbarScroll
                         >
                             <Nav.Link href="/">Home</Nav.Link>
@@ -57,16 +57,18 @@ const Hubnav = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-
-
-
-
-
-
-            {/* </div> */}
-
-
-
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="row justify-content-center quote">
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">"Never, ever understimate the importance of having fun."</p>
+                                <footer class="blockquote-footer">Randy Pausch.</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
