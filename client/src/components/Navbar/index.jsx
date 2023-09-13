@@ -23,18 +23,18 @@ const Hubnav = () => {
                             style={{ display: "flex", flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center', padding: '100px', maxHeight: '500px' }}
                             navbarScroll
                         >
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/about">About</Nav.Link>
+                            <Nav.Link className="p-2" href="/">Home</Nav.Link>
+                            <Nav.Link className="p-2" href="/about">About</Nav.Link>
                             <NavDropdown title="Events" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="/music">music</NavDropdown.Item>
                                 <NavDropdown.Item href="/food">food</NavDropdown.Item>
                                 <NavDropdown.Item href="/sports">sports</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="/art">
+                                <NavDropdown.Item className="p-2" href="/art">
                                     Art
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="/favorites">Favorites</Nav.Link>
+                            <Nav.Link className="p-2" href="/favorites">Favorites</Nav.Link>
                         </Nav>
 
                         <Form className="d-flex" id="city-zip">
