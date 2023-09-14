@@ -30,7 +30,7 @@ const Hubnav = () => {
                                 <NavDropdown.Item href="/food">food</NavDropdown.Item>
                                 <NavDropdown.Item href="/sports">sports</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item className="p-2" href="/art">
+                                <NavDropdown.Item href="/art">
                                     Art
                                 </NavDropdown.Item>
                             </NavDropdown>
