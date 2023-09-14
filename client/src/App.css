@@ -58,3 +58,19 @@ background: linear-gradient(to right, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, F
     font-size: 16px;
   }
 }
+/* css for screens greater than 1200px large desktop */
+@media (min-width: 1200px) {
+  .designer-text,
+  .copyright-text {
+    font-size: 18px;
+  }
+}
+
+/*  @media screen and (max-width: 640px) { */
+
+/* intro section 75% smaller to fit on page comfortably */
+/* #intro-section { */
+/* transform: scale(75%); */
+/* transition: all 1s ease-in-out; */
+/* } */
+/* } */
