@@ -8,6 +8,8 @@ import './index.scss';
 
     function Food() {
             return (
+                <div className='art-page'>
+                <h1 className='site-title'>Eateries</h1>
                 <CardGroup>
                     <Card>
                     <Card.Img variant="top" src={food1} />
@@ -38,7 +40,7 @@ import './index.scss';
                     <Card.Body>
                         <Card.Title>Brunch/Dinner</Card.Title>
                         <Card.Text>
-                        Indulge in Culinary Delights, Brunch & Dinner Extravaganza. Enjoy a variety of delicious dishes from around the world, including hand-carved meats, rotisserie chicken, seafood, pasta dishes, salads, and more!!!!
+                        Indulge in Culinary Delights, Brunch & Dinner Extravaganza. Enjoy a variety of delicious dishes from around the world, including hand-carved meats, rotisserie chicken, seafood, pasta dishes, salads, and more!
 
 
                         </Card.Text>
@@ -48,6 +50,7 @@ import './index.scss';
                     </Card.Footer>
                     </Card>
                 </CardGroup>
+                </div>
             );
         }
     

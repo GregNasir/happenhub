@@ -8,6 +8,8 @@ import './index.scss';
 
     function Music() {
             return (
+                <div className='art-page'>
+                <h1 className='site-title'>Music</h1>
                 <CardGroup>
                     <Card>
                     <Card.Img variant="top" src={jazz} />
@@ -46,6 +48,7 @@ import './index.scss';
                     </Card.Footer>
                     </Card>
                 </CardGroup>
+                </div>
             );
         }
     

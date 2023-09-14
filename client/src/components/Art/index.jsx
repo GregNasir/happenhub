@@ -9,6 +9,8 @@ import './index.scss';
 
     function Art() {
             return (
+            <div className='art-page'>
+                <h1 className='site-title'>Art Museums</h1>
                 <CardGroup>
                     <Card>
                     <Card.Img variant="top" src={art1} />
@@ -39,7 +41,7 @@ import './index.scss';
                     <Card.Body>
                         <Card.Title>Museum of Comtemporary Art</Card.Title>
                         <Card.Text>
-                        LACMA, the largest art museum in the western United States, is located in the heart of Los Angeles, California. It holds more than 150,000 works spanning the history of art from ancient times to the present. In addition to art exhibits, the museum features film and concert series.
+                        MOCA is a museum that strives to engage and enrich diverse audiences through the collection, preservation, and presentation of contemporary art and design. The museum is located in Los Angeles, California.
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
@@ -47,6 +49,7 @@ import './index.scss';
                     </Card.Footer>
                     </Card>
                 </CardGroup>
+            </div>
             );
         }
 
