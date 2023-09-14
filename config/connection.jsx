@@ -10,3 +10,5 @@ connect(connectionString, {
 });
 
 module.exports = connection;
+module.exports.clientId = "<9874287469-v08vcjk234fu978ekt6hcvncocduq44v.apps.googleusercontent.com>";
+module.exports.clientSecret = "<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>";
