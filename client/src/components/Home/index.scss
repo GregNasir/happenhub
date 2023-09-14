@@ -1,15 +1,19 @@
 .site-title {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 50px;
-    color: blue;
+    font-family: 'Libre Bodoni', 'sans-serif-medium';
+    font-size: 60px;
+    color: rgb(17, 2, 2);
 }
+/*.container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}*/
 
 /*background image*/
 
 .back-img {
-    background-image: url('../../assets/pink-back.jpeg');
+    background-image: url('../../assets/images/nyc.jpg');
     background-size: cover;
-    height: 500px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
 }

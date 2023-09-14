@@ -8,6 +8,8 @@ import './index.scss';
 
     function Food() {
             return (
+                <div className='art-page'>
+                <h1 className='site-title'>Eateries</h1>
                 <CardGroup>
                     <Card>
                     <Card.Img variant="top" src={food1} />
@@ -48,6 +50,7 @@ import './index.scss';
                     </Card.Footer>
                     </Card>
                 </CardGroup>
+                </div>
             );
         }
     

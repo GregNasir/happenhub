@@ -18,5 +18,16 @@
 
 
 }
+.navbar-toggler {
+    border-color: rgb(90, 154, 214);
+}
+.navbar-toggler-icon {
+    background-color: rgb(151, 205, 193);
+}
+body {
+    background-color: rgb(217, 148, 148);
+    color: var(--text-color);
+}
+
 
 @media screen and (max-width: 1200px) {}
