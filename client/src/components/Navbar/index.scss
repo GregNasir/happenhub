@@ -1,33 +1,73 @@
+/* navbar.scss */
+
+/* Navbar background color */
 .bg-body-tertiary {
-    width: 100%;
-    height: 50px;
-
-    .menu {
-        position: relative;
-        top: 50%;
-    }
-
-    #city-zip {
-        margin-right: 20px;
-
-    }
-
-    #search-form {
-        margin-right: 20px;
-    }
-
-
-}
-.navbar-toggler {
-    border-color: rgb(90, 154, 214);
-}
-.navbar-toggler-icon {
-    background-color: rgb(151, 205, 193);
-}
-body {
-    background-color: rgb(217, 148, 148);
-    color: var(--text-color);
+background-color: #cf2727; 
 }
 
+/* Navbar Brand (logo) styling */
+.navbar-brand {
+font-size: 20px; 
+color: black; 
+font-weight: bold; 
+text-decoration: none; 
+}
 
-@media screen and (max-width: 1200px) {}
+/* Navbar links styling */
+.nav-link {
+font-size: 16px; 
+color: black; 
+text-decoration: none; 
+margin-right: 20px; 
+transition: color 0.3s ease; 
+}
+
+.nav-link:hover {
+color: red; 
+}
+
+/* Navbar dropdown styling */
+.nav-item.dropdown:hover .dropdown-menu {
+display: block; 
+}
+
+.dropdown-menu {
+background-color: whitesmoke; 
+border: none; 
+}
+
+.dropdown-item {
+color: black;
+transition: background-color 0.3s ease; 
+}
+
+.dropdown-item:hover {
+background-color: #2f84da; 
+color: red;
+}
+
+/* Search form styling */
+#city-zip,
+#search-form {
+margin-left: auto; 
+}
+
+/* Form input styling */
+.form-control {
+border: none; 
+background-color: #dbeaf3;
+color: black;
+}
+
+/* Button styling */
+.btn {
+color: black; /* Button text color */
+background-color: #77ac90; /* Button background color */
+border: none; 
+margin-left: 10px; 
+cursor: pointer; 
+}
+
+.btn:hover {
+background-color: #1721e1; 
+}
