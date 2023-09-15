@@ -16,11 +16,11 @@ const resolvers = {
         addUser: async (parent, { name }) => {
             return User.create({ name });
             },
-            addLocation: async (parent, { userId, location }) => {
+            addFavorite: async (parent, { userId, favorite }) => {
             return User.findOneAndUpdate(
                 { _id: userId },
                 {
-                $addToSet: { locations: location },
+                $addToSet: { favorites: favorite },
                 },
                 {
                 new: true,
@@ -31,10 +31,10 @@ const resolvers = {
             removeUser: async (parent, { userId }) => {
             return User.findOneAndDelete({ _id: userId });
             },
-            removeLocation: async (parent, { userId, location }) => {
+            removeFavorite: async (parent, { userId, favorite }) => {
             return User.findOneAndUpdate(
                 { _id: userId },
-                { $pull: { locations: location } },
+                { $pull: { favorites: favorite } },
                 { new: true }
             );
             },

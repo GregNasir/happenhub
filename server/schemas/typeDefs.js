@@ -2,7 +2,7 @@ const typeDefs = `#graphql
     type User {
         _id: ID
         name: String
-        location: [String]!
+        favorite: [String]!
     }
 
     type Query {
@@ -12,9 +12,9 @@ const typeDefs = `#graphql
 
     type Mutation {
         addUser(name: String!): User
-        addLocation(userId: ID!, location: String!): User
+        addFavorite(userId: ID!, favorite: String!): User
         removeUser(userId: ID!): User
-        removeLocation(userId: ID!, location: String!): User
+        removeFavorite(userId: ID!, favorite: String!): User
     }
 `;
 
