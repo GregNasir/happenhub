@@ -28,7 +28,7 @@
 -DEMO GOES HERE
 
 ## Links
-- Heroku:
+- Heroku: add Heroku here
 
 ## Technologies
 Technologies used:
