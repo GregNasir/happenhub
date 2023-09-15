@@ -12,6 +12,7 @@ import Food from './components/Food';
 import Sports from './components/Sports';
 import Art from './components/Art';
 import Favorites from './components/Favorites';
+import Footer from './components/Footer';
 // import Contact from './components/Contact';
 
 
@@ -55,6 +56,7 @@ function App() {
           {/* <Route path='contact' element={<Contact/>} /> */}
         </Route>
       </Routes>
+      <Footer/>
 
 
     </>
