@@ -9,6 +9,11 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+
+  "engines": {
+    "node": "18.16.0"
+  },
+  
   "dependencies": {
     "@apollo/client": "^3.8.3",
     "bootstrap": "^5.3.1",
