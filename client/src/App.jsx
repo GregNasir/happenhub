@@ -14,7 +14,8 @@ import Art from './components/Art';
 import Favorites from './components/Favorites';
 import Footer from './components/Footer';
 // import Signup from './components/Signup';
-// import Login from './components/Login';
+import Login from './components/Login';
+import Signup from './components/Signup';
 // import Contact from './components/Contact';
 
 
@@ -57,6 +58,8 @@ function App() {
           <Route path='sports' element={<Sports/>} />
           <Route path='art' element={<Art/>} />
           <Route path='favorites' element={<Favorites/>} />
+          <Route path='login' element={<Login/>} />
+          <Route path='signup' element={<Signup/>} />
           {/* <Route path='contact' element={<Contact/>} /> */}
         </Route>
       </Routes>
