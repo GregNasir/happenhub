@@ -22,7 +22,7 @@
 
 - Install dependencies: npm install
 
-- Start the development client: npm run develop
+- Start the development client: npm run dev
 
 ## Demo
 -DEMO GOES HERE
