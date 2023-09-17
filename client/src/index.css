@@ -68,3 +68,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media screen and (max-width: 900px){
+  body h1 {
+    display: block;
+  }
+
+  .site-title {
+    font-size: small;
+    margin-top: 10px;
+  }
+  
+  .site-description {
+    font-size: 30px;
+    color: #ffffff;
+    
+  }
+
+  .back-img {
+    width: 600px;
+  }
+}

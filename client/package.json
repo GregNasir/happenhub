@@ -9,13 +9,15 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-
   "engines": {
     "node": "18.16.0"
   },
-  
   "dependencies": {
     "@apollo/client": "^3.8.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "axios": "^1.5.0",
     "bootstrap": "^5.3.1",
     "graphql": "^16.8.0",
     "react": "^18.2.0",
@@ -31,7 +33,13 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "nodemon": "^2.0.3",
     "sass": "^1.66.1",
     "vite": "^4.4.5"
-  }
+  },
+  "development": [
+    "last 1 chrome version",
+    "last 1 firefox version",
+    "last 1 safari version"
+  ]
 }

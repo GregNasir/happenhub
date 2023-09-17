@@ -37,15 +37,6 @@ const Hubnav = () => {
                             <Nav.Link href="/favorites">Favorites</Nav.Link>
                         </Nav>
 
-                        <Form className="d-flex" id="city-zip">
-                            <Form.Control
-                                type="search"
-                                placeholder="City or Zip Code"
-                                aria-label="Search"
-                            />
-                            <Button variant="outline-success">Search</Button>
-                        </Form>
-
                         <Form className="d-flex" id="search-form">
                             <Form.Control
                                 type="search"
@@ -54,6 +45,13 @@ const Hubnav = () => {
                             />
                             <Button variant="outline-success">Search</Button>
                         </Form>
+
+                        <div  id="login-signup">
+                            
+                            <Button variant="outline-success" href='/login' type='submit' id='login-button'>Login</Button>
+                            <Button variant="outline-success" href='/signup' type='submit' id='signup-button'>Signup</Button>
+                        
+                        </div>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

@@ -47,9 +47,15 @@ color: red;
 }
 
 /* Search form styling */
-#city-zip,
+
 #search-form {
-margin-left: auto; 
+margin-left: 500px; 
+}
+
+#login-signup {
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
 }
 
 /* Form input styling */
@@ -70,4 +76,18 @@ cursor: pointer;
 
 .btn:hover {
 background-color: #1721e1; 
+}
+
+@media screen and (max-width: 900px){
+    #search-form {
+        margin: 0; 
+        }
+        
+        #login-signup {
+            display: flex;
+            flex: auto;
+            justify-content: center;
+            margin-top: 10px;
+        }
+    
 }
