@@ -57,7 +57,7 @@
 
 
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import basketball from '../../assets/images/basketball.jpg';
 import hockey from '../../assets/images/hockey.jpg';
@@ -68,14 +68,14 @@ import Button from 'react-bootstrap/Button';
 import './index.scss';
 
 function Sports() {
-  const history = useHistory();
+  const history = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
 
     // Programmatically navigate to the page where results are displayed
-    history.push(`/sports/${category.toLowerCase()}`);
+    history(`/sports/${category.toLowerCase()}`);
   };
 
   return (
