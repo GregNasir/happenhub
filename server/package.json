@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@apollo/client": "^3.8.3",
     "@apollo/server": "^4.9.3",
     "bcrypt": "^5.1.0",
     "connect-session-sequelize": "^7.1.7",
