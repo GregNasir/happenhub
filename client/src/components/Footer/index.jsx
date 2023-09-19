@@ -5,7 +5,8 @@ const Footer = () => {
 <footer 
 className="footer">
     <div className="container">
-        <span className="text-muted">&copy; 2023 All Rights Reserved HappenHub</span>
+        <span className="text-muted">&copy; {new Date().getFullYear()} All Rights Reserved HappenHub</span>
+        
     </div>
     </footer>
 );
