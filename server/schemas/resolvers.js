@@ -1,45 +1,93 @@
+// const { User } = require('../models');
+
+// const resolvers = {
+//         Query: {
+//         users: async () => {
+//             return User.find();
+//         },
+
+//         user: async (parent, { userId }) => {
+//             return User.findOne({ _id: userId });
+//         },
+//         },
+
+
+//     Mutation: {
+//         addUser: async (parent, { name }) => {
+//             return User.create({ name });
+//             },
+//             addFavorite: async (parent, { userId, favorite }) => {
+//             return User.findOneAndUpdate(
+//                 { _id: userId },
+//                 {
+//                 $addToSet: { favorites: favorite },
+//                 },
+//                 {
+//                 new: true,
+//                 runValidators: true,
+//                 }
+//             );
+//             },
+//             removeUser: async (parent, { userId }) => {
+//             return User.findOneAndDelete({ _id: userId });
+//             },
+//             removeFavorite: async (parent, { userId, favorite }) => {
+//             return User.findOneAndUpdate(
+//                 { _id: userId },
+//                 { $pull: { favorites: favorite } },
+//                 { new: true }
+//             );
+//             },
+//         },
+//         };
+
+
+// module.exports = resolvers;
+
 const { User } = require('../models');
 
+
 const resolvers = {
-        Query: {
+    Query: {
         users: async () => {
-            return User.find();
+        return User.find();
         },
-
         user: async (parent, { userId }) => {
-            return User.findOne({ _id: userId });
+        return User.findOne({ _id: userId });
         },
-        },
-
-
+    },
     Mutation: {
-        addUser: async (parent, { name }) => {
-            return User.create({ name });
-            },
-            addFavorite: async (parent, { userId, favorite }) => {
+        addUser: async (parent, { firstName, lastName, email, password }) => {
+            console.log(email);
+        return User.create({ firstName, lastName, email, password });
+        },
+        
+        addFavorite: async (parent, { userId, favorite }) => {
             return User.findOneAndUpdate(
-                { _id: userId },
-                {
-                $addToSet: { favorites: favorite },
-                },
-                {
-                new: true,
-                runValidators: true,
-                }
-            );
-            },
-            removeUser: async (parent, { userId }) => {
+                                { _id: userId },
+                                {
+                                $addToSet: { favorites: favorite },
+                                },
+                                {
+                                new: true,
+                                runValidators: true,
+                                }
+                            );
+                            },
+        
+        removeUser: async (parent, { userId }) => {
             return User.findOneAndDelete({ _id: userId });
             },
-            removeFavorite: async (parent, { userId, favorite }) => {
+    
+        removeFavorite: async (parent, { userId, favorite }) => {
             return User.findOneAndUpdate(
-                { _id: userId },
-                { $pull: { favorites: favorite } },
-                { new: true }
-            );
+                //                 { _id: userId },
+                //                 { $pull: { favorites: favorite } },
+                //                 { new: true }
+                );
             },
-        },
-        };
-
+    
+    },
+};
 
 module.exports = resolvers;

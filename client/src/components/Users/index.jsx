@@ -1,9 +1,10 @@
 import './index.scss';
 import { useEffect, useState } from 'react';
-import axios from '../../api/axios';
+// import axios from '../../api/axios';
+import axios from "axios";
 
 const Users = () => {
-    const [ users, setUsers ] = useState();
+    const [ users, setUsers ] = useState([]);
 
     useEffect(() => {
         let isMounted = true
@@ -11,7 +12,7 @@ const Users = () => {
 
         const getUsers = async () => {
             try {
-                const response = await axios.get('/users', {
+                const response = await axios.get('/api/users', {
                     signal: controller.signal
                 });
                 console.log(response.data);
@@ -33,12 +34,14 @@ const Users = () => {
 
     return (
         <>
+
+            <h1 className='users-title'>Users</h1>
             <article>
                 <h2>Users List</h2>
                 {users?.length
                     ? (
                         <ul>
-                            {users.map((user, uuid) => <li key={uuid}>{user?.
+                            {users.map((user, userId) => <li key={uuid}>{user?.
                             username}</li>)}
                         </ul>
                     ) : <p>No users to display</p>
