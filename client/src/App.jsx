@@ -21,6 +21,7 @@ import Food from './components/Food';
 import Sports from './components/Sports';
 import Art from './components/Art';
 import Favorites from './components/Favorites';
+import EventListMusic from './components/Music/EventList';
 import Footer from './components/Footer';
 // import Main from "./components/Main";
 // import Signup from './components/Signup';
@@ -71,6 +72,7 @@ function App() {
               <Route path='sports' element={<Sports/>} />
               <Route path='art' element={<Art/>} />
               <Route path='favorites' element={<Favorites/>} />
+              <Route path="/music/concerts" element={<EventListMusic />} />
               <Route path='login' element={<Login/>} />
               <Route path='signup' element={<Signup/>} />
               <Route path='/api/users' element={<Users/>} />
