@@ -7,7 +7,7 @@ const Home = () => {
 
 
     const isAuthenticated = true; // Replace with your actual authentication logic.
-    const userlastName = "and welcome"; // Replace with the user's name from your state.
+    const userlastName = ""; // Replace with the user's name from your state.
     // const Location=useLocation();
     
 
