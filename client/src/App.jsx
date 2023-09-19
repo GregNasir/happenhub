@@ -15,6 +15,10 @@ import Favorites from './components/Favorites';
 import EventList from "./components/Sports/EventList";  // Import the EventList component
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Footer from './components/Footer';
+// import Signup from './components/Signup';
+import Login from './components/Login';
+import Signup from './components/Signup';
 // import Contact from './components/Contact';
 
 
@@ -49,6 +53,8 @@ function App() {
         <Route path="/" element={<Layout/>} >
           <Route index element={<Home/>} />
           <Route path='home' element={<Home/>} />
+          {/* <Route path='signup' element={<Signup/>} />
+          <Route path='login' element={<Login/>} /> */}
           <Route path='about' element={<About/>} />
           <Route path='music' element={<Music/>} />
           <Route path='food' element={<Food/>} />
@@ -59,6 +65,7 @@ function App() {
           {/* <Route path='contact' element={<Contact/>} /> */}
         </Route>
       </Routes>
+      <Footer/>
 
 
     </>
