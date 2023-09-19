@@ -1,11 +1,18 @@
 import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { LOGIN_USER } from "../utils/mutatations";
+import { useMutation } from "@apollo/client";
 import styles from "./styles.module.scss";
 
 const Login = () => {
-	const [data, setData] = useState({ email: "", password: "" });
+	const [data, setData] = useState({ 
+		email: "", 
+		password: "" 
+	});
 	const [error, setError] = useState("");
+	const [loginUser, { error: loginError, data: loginData }] = useMutation(LOGIN_USER);
+
 
 	const handleChange = ({ currentTarget: input }) => {
 		setData({ ...data, [input.name]: input.value });
@@ -14,10 +21,22 @@ const Login = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:3000/api/auth";
-			const { data: res } = await axios.post(url, data);
-			localStorage.setItem("token", res.data);
+			const { inputData } = await loginUser({
+				variables: {
+
+					email: data.email,
+					password: data.password,
+					},
+			});
+			// const { data: res } = await axios.post(data);
+			localStorage.setItem("token", data);
 			window.location = "/";
+
+
+			// const url = "http://localhost:3000/api/auth";
+			// const { data: res } = await axios.post(url, data);
+			// localStorage.setItem("token", res.data);
+			// window.location = "/";
 		} catch (error) {
 			if (
 				error.response &&
