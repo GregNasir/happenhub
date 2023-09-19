@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+// commenting
 import './App.css'
 import {
   ApolloClient,
@@ -21,8 +22,12 @@ import Food from './components/Food';
 import Sports from './components/Sports';
 import Art from './components/Art';
 import Favorites from './components/Favorites';
+
+import EventListMusic from './components/Music/EventList';
+
 import EventList from "./components/Sports/EventList";  // Import the EventList component
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 import Footer from './components/Footer';
 // import Main from "./components/Main";
@@ -73,6 +78,7 @@ function App() {
               <Route path='sports' element={<Sports/>} />
               <Route path='art' element={<Art/>} />
               <Route path='favorites' element={<Favorites/>} />
+              <Route path="/music/concerts" element={<EventListMusic />} />
               <Route path='login' element={<Login/>} />
               <Route path='signup' element={<Signup/>} />
               <Route path='/api/users' element={<Users/>} />
