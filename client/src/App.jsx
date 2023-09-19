@@ -21,6 +21,9 @@ import Food from './components/Food';
 import Sports from './components/Sports';
 import Art from './components/Art';
 import Favorites from './components/Favorites';
+import EventList from "./components/Sports/EventList";  // Import the EventList component
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Footer from './components/Footer';
 // import Main from "./components/Main";
 // import Signup from './components/Signup';
@@ -58,7 +61,6 @@ function App() {
 
   return (
     <>
-    
   <ApolloProvider client={client}>
     <Routes>
             <Route path="/" element={<Layout/>} >
@@ -74,6 +76,7 @@ function App() {
               <Route path='login' element={<Login/>} />
               <Route path='signup' element={<Signup/>} />
               <Route path='/api/users' element={<Users/>} />
+              <Route path='sports/:category' element={<EventList />} />
               {/* <Route path='contact' element={<Contact/>} /> */}
             </Route>
           </Routes>
