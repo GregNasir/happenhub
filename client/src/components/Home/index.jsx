@@ -1,12 +1,21 @@
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import {useLocation, useNavigate} from 'react-router-dom';
 import './index.scss';
 
 const Home = () => {
+
+    const Location=useLocation();
+    
+
     return (
+
             <div className='container'>
             <div className='site-title'>
                 <h1>HappenHub </h1>
                 <div className='site-description'>
                 <p>Find the best events in your area!</p>
+                {/* <h2>Hello {Location.state.id} and welcome to HappenHub</h2> */}
             </div>
             </div>
             <div className='back-img'>
