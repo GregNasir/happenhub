@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 
 // const secret = process.env.JWTPRIVATEKEY;
 const secret = 'mysecretssshhhhhhh';
-const expiration = '2h';
+const expiration = '7d';
 
 module.exports = {
     AuthenticationError: new GraphQLError('Could not authenticate user.', {

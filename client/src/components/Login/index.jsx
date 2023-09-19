@@ -18,6 +18,8 @@ const Login = () => {
 		setData({ ...data, [input.name]: input.value });
 	};
 
+	
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
@@ -30,7 +32,10 @@ const Login = () => {
 			});
 			// const { data: res } = await axios.post(data);
 			localStorage.setItem("token", data);
+			localStorage.setItem("loggedIn", true);
 			window.location = "/";
+
+			
 
 
 			// const url = "http://localhost:3000/api/auth";
