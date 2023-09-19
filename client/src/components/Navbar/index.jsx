@@ -8,6 +8,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+const logout = () => {
+    window.localStorage.clear();
+    window.localStorage.href="./login";
+};
+
+
 const Hubnav = () => {
     const [showNav, setShowNav] = useState(false);
     return (
@@ -49,6 +55,7 @@ const Hubnav = () => {
                         <div  id="login-signup">
                             
                             <Button variant="outline-success" href='/login' type='submit' id='login-button'>Login</Button>
+                            <Button variant="outline-success" href='/login' onClick={logout} id='login-button'>Log Out</Button>
                             <Button variant="outline-success" href='/signup' type='submit' id='signup-button'>Signup</Button>
                         
                         </div>

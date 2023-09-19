@@ -41,11 +41,14 @@ const Users = () => {
                 {users?.length
                     ? (
                         <ul>
-                            {users.map((user, userId) => <li key={uuid}>{user?.
-                            username}</li>)}
+                            {users.map((user) => (
+                                <li key={user._id}>
+                                    {user.firstName} {user.lastName}
+                                </li>
+                            ))}
                         </ul>
                     ) : <p>No users to display</p>
-                }
+}
             </article>
         
         </>

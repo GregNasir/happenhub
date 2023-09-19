@@ -5,7 +5,10 @@ import './index.scss';
 
 const Home = () => {
 
-    const Location=useLocation();
+
+    const isAuthenticated = true; // Replace with your actual authentication logic.
+    const userlastName = ""; // Replace with the user's name from your state.
+    // const Location=useLocation();
     
 
     return (
@@ -16,6 +19,11 @@ const Home = () => {
                 <div className='site-description'>
                 <p>Find the best events in your area!</p>
                 {/* <h2>Hello {Location.state.id} and welcome to HappenHub</h2> */}
+                {isAuthenticated ? (
+                        <h2>Hello {userlastName} and welcome to HappenHub</h2>
+                    ) : (
+                        <p>Please log in to see personalized content.</p>
+                    )}
             </div>
             </div>
             <div className='back-img'>
