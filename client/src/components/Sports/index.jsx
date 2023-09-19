@@ -74,7 +74,7 @@ function Sports() {
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
 
-    // Programmatically navigate to the page where results are displayed
+    
     history(`/sports/${category.toLowerCase()}`);
   };
 
