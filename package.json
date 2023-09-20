@@ -8,13 +8,8 @@
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm run dev\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "watch": "nodemon",
-    "seed": "cd server && npm run seed",
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "seed": "cd server && npm run seed"
+    
   },
   "engines": {
     "node": "18.16.0",
