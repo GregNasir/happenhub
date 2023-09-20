@@ -239,6 +239,7 @@ const startApolloServer = async () => {
   app.use("/api/auth", authRoutes);
 
   // Serve static files in production
+  // fixed deploy
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/dist')));
     
