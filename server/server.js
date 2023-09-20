@@ -221,7 +221,7 @@ const server = new ApolloServer({
   });
 
 // database connection
-connection();
+
 
 // middlewares
 app.use(express.json());
@@ -247,9 +247,12 @@ const startApolloServer = async () => {
     });
   }
 
-  const port = process.env.PORT || 3001;
-  app.listen(port, () => {
-      console.log(`Listening on port ${port}...`);
+  const PORT = process.env.PORT || 3001;
+  connection.once('open', () => {
+    app.listen(PORT, () => {
+      console.log(`API server running on port ${PORT}!`);
+      console.log(`Use GraphQL at http://localhost:${PORT}/graphql`);
+    });
   });
 };
 
