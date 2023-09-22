@@ -25,10 +25,18 @@
 - Start the development client: npm run dev
 
 ## Demo
--DEMO GOES HERE
+<img width="1429" alt="HappenHub-Screenshot" src="https://github.com/GregNasir/happenhub/assets/63434657/ad19dab3-66ad-472a-9db0-80ee6fa08f75">
+
+https://github.com/GregNasir/happenhub/assets/63434657/45eaddb6-9f7c-4240-b655-17e20119fcca
 
 ## Links
-- Heroku: add Heroku here
+* <a href="https://github.com/GregNasir/happenhub">HappenHub Repository</a>
+
+* <a href="https://happenhubsearch-a6304aac1562.herokuapp.com/">HappenHub Deployed Page</a>
+
+## Usage
+
+Find your favorite events you wish to attend in your area.
 
 ## Technologies
 Technologies used:
@@ -43,6 +51,21 @@ Technologies used:
 - Nodemon
 - Sequelize
 - Mysql
+
+
+Resources:
+
+[Chat-GPT](https://chat.openai.com/)
+
+[W3schools](https://www.w3schools.com/)
+
+[react.dev](https://react.dev/)
+
+
+## Questions
+
+* GitGub: (https://github.com/GregNasir)
+* Email: gregoryo.rwilliams@gmail.com
 
 ## Contributing
 * [Delia Young GitHub](https://github.com/deliaswe)
