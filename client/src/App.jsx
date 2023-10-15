@@ -22,6 +22,7 @@ import Food from './components/Food';
 import Sports from './components/Sports';
 import Art from './components/Art';
 import Favorites from './components/Favorites';
+// import Slider from "./components/slider/Slider";
 
 import EventListMusic from './components/Music/EventList';
 
@@ -86,7 +87,8 @@ function App() {
               {/* <Route path='contact' element={<Contact/>} /> */}
             </Route>
           </Routes>
-          <Footer/>
+          {/* <Slider /> */}
+          {/* <Footer/> */}
           </ApolloProvider>
 
     </>

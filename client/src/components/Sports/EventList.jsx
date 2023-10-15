@@ -39,10 +39,27 @@ function EventList({ match }) {
 
 return (
   <div>
-    <h1>Events in {category}</h1>
-    <ul>
+    <h1 className='page-top'>Events in {category}</h1>
+    <ul className='event-thumbnail event-sports' >
       {events.map((event) => (
         <li key={event.id}>
+
+      {event.images && event.images.length > 0 ? (
+            <div>
+                {/* <p>Images:</p> */}
+                <ul >
+                    {/* {event.images.map((image, index) => (
+                    <li key={index}>
+                        <img src={image.url} alt={`Event Image ${index}`} />
+                    </li>
+                    ))} */}
+                    <img src={event.images[0].url} alt={`Event Image`} style={{ width: '400px', height: '200px' }}/>
+                </ul>
+            </div>
+            ) : (
+                <p>Images: N/A</p>
+            )}
+            
           <h3>{event.name}</h3>
           <p>
             Location: {event._embedded && event._embedded.venues[0] ? event._embedded.venues[0].name : 'N/A'}
@@ -50,6 +67,7 @@ return (
           <p>
             Date & Time: {event.dates && event.dates.start ? event.dates.start.dateTime : 'N/A'}
           </p>
+          
         </li>
       ))}
     </ul>

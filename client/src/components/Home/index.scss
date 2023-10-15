@@ -1,10 +1,10 @@
 .site-title {
     font-family: 'Libre Bodoni', 'sans-serif-medium';
-    font-size: 60px;
+    font-size: 40px;
     color: black;
 }
 .site-description {
-    font-size: 50px;
+    font-size: 35px;
     color: black;
 }
 /* .container {
@@ -13,22 +13,32 @@
 
 }*/
 .container {
-    height: 100vh; /* Set the container's height to 100% of the viewport height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    // height: 100vh; /* Set the container's height to 100% of the viewport height */
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // text-align: center;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
+
+// .home-page {
+//     margin: 0;
+// }
 
 /*background image*/
 
-.back-img {
-    background-image: url('../../assets/images/nyc.jpg');
-    background-size: cover;
-    height: 400px;
-    width: 2000px;
-    background-position: center;
-    flex-grow: 1;
-    background-repeat: no-repeat;
-}
+// .back-img {
+//     background-image: url('../../assets/images/nyc.jpg');
+//     background-size: cover;
+//     height: 400px;
+//     width: 2000px;
+//     background-position: center;
+//     flex-grow: 1;
+//     background-repeat: no-repeat;
+// }

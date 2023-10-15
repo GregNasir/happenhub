@@ -89,3 +89,14 @@ button:focus-visible {
     width: 600px;
   }
 }
+
+.event-thumbnail {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  
+}
+
+.page-top {
+  margin-top: 50px;
+}
