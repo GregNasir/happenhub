@@ -30,7 +30,7 @@ import EventList from "./components/Sports/EventList";  // Import the EventList 
 
 
 
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 // import Main from "./components/Main";
 // import Signup from './components/Signup';
 import Login from './components/Login';
