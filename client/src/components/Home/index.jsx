@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import {useLocation, useNavigate} from 'react-router-dom';
+import Slider from '../Slider/slider';
 import './index.scss';
 
 const Home = () => {
@@ -13,21 +14,24 @@ const Home = () => {
 
     return (
 
-            <div className='container'>
-            <div className='site-title'>
+            <div className='container' id='home-page'>
+            {/* <div className='site-title'>
                 <h1>HappenHub </h1>
                 <div className='site-description'>
-                <p>Find the best events in your area!</p>
+                <p>Find the best events in your area!</p> */}
                 {/* <h2>Hello {Location.state.id} and welcome to HappenHub</h2> */}
-                {isAuthenticated ? (
+                {/* {isAuthenticated ? (
                         <h2>Hello {userlastName} and welcome to HappenHub</h2>
                     ) : (
                         <p>Please log in to see personalized content.</p>
-                    )}
-            </div>
-            </div>
-            <div className='back-img'>
-            </div>
+                    )} */}
+            {/* </div> */}
+            {/* </div > */}
+            
+            <Slider />
+           
+            {/* <div className='back-img'>
+            </div> */}
             </div>
     );
 };
